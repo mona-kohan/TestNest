@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on linux)" generated="2025-04-08T16:33:51.638041" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Test" source="/home/monakohandani/robot-api-test/api_test.robot">
+<test id="s1-t1" name="GET Request Should Return 200" line="5">
+<kw name="GET">
+<msg time="2025-04-08T16:33:51.684601" level="FAIL">No keyword with name 'GET' found. Did you mean:
+    BuiltIn.Get Time</msg>
+<arg>/posts</arg>
+<status status="FAIL" start="2025-04-08T16:33:51.684565" elapsed="0.000077">No keyword with name 'GET' found. Did you mean:
+    BuiltIn.Get Time</status>
+</kw>
+<kw name="Status Code Should Be">
+<arg>200</arg>
+<status status="NOT RUN" start="2025-04-08T16:33:51.684754" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2025-04-08T16:33:51.683834" elapsed="0.001031">No keyword with name 'GET' found. Did you mean:
+    BuiltIn.Get Time</status>
+</test>
+<test id="s1-t2" name="GET Specific Post Should Contain Title" line="9">
+<kw name="GET">
+<msg time="2025-04-08T16:33:51.685373" level="FAIL">No keyword with name 'GET' found. Did you mean:
+    BuiltIn.Get Time</msg>
+<arg>/posts/1</arg>
+<status status="FAIL" start="2025-04-08T16:33:51.685356" elapsed="0.000039">No keyword with name 'GET' found. Did you mean:
+    BuiltIn.Get Time</status>
+</kw>
+<kw name="Status Code Should Be">
+<arg>200</arg>
+<status status="NOT RUN" start="2025-04-08T16:33:51.685462" elapsed="0.000009"/>
+</kw>
+<kw name="Object Should Contain">
+<arg>title</arg>
+<arg>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</arg>
+<status status="NOT RUN" start="2025-04-08T16:33:51.685531" elapsed="0.000008"/>
+</kw>
+<status status="FAIL" start="2025-04-08T16:33:51.685001" elapsed="0.000620">No keyword with name 'GET' found. Did you mean:
+    BuiltIn.Get Time</status>
+</test>
+<status status="FAIL" start="2025-04-08T16:33:51.638591" elapsed="0.047210"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api Test" id="s1" pass="0" fail="2" skip="0">Api Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-08T16:33:51.683478" level="ERROR">Error in file '/home/monakohandani/robot-api-test/api_test.robot' on line 2: Importing library 'REST' failed: ModuleNotFoundError: No module named 'pkg_resources'
+Traceback (most recent call last):
+  File "/home/monakohandani/venv/lib/python3.12/site-packages/REST/__init__.py", line 18, in &lt;module&gt;
+    from .keywords import Keywords
+  File "/home/monakohandani/venv/lib/python3.12/site-packages/REST/keywords.py", line 18, in &lt;module&gt;
+    from flex.core import validate_api_call
+  File "/home/monakohandani/venv/lib/python3.12/site-packages/flex/__init__.py", line 6, in &lt;module&gt;
+    import pkg_resources
+PYTHONPATH:
+  /home/monakohandani/venv/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /home/monakohandani/venv/lib/python3.12/site-packages</msg>
+</errors>
+</robot>
